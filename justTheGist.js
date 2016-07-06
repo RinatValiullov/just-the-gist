@@ -30,6 +30,7 @@ $(document).ready(function() {
   removeHTMLTagsAndOutputResults();
 
 
+
 	//formatting syntax of jquery function in plain vanilla javascript:
 
 	 	// function bindListener()	 {
@@ -108,6 +109,8 @@ $(document).ready(function() {
 	};
 	searchWikiData(); //calls function, searchWikiData
 
+
+
 //function to make enter key submit like button click
    // $(function () {
 
@@ -177,7 +180,6 @@ $(document).ready(function() {
 	$("#output").html(frequencies); //print resulting most frequent to html
 
 
-
 	//Search for images via Flickr
 	function searchFlickr()	 {
 		$("#btnEnterSearchTerm").click(function(){
@@ -203,6 +205,13 @@ $(document).ready(function() {
 		});
 	};
 	searchFlickr(); //calls function, searchFlickr
+
+
+    $("#btnEnterSearchTerm").click(function(){ //fade in output
+        //$("#output").fadeIn("slow");
+        $("#output").fadeIn(3000);
+    });
+
 
 }); ///closes document ready function, but why not underlining?
 
